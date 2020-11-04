@@ -31,12 +31,14 @@ epochs为50，
 **BiLSTM-CRF**：隐藏层神经元数目为18  
 **BERT-CRF**：由于机器配置的限制，BERT的batch_size为8，epochs为10
 ## 结果比较
-BERT-CRF的性能是最优的，因此我们选择BERT-CRF做为我们的NER模型。
+BERT-CRF的性能是最优的，因此我们选择BERT-CRF做为我们的NER模型。  
+![模型对比](https://github.com/saynHuang/npc_structure/raw/main/data/model%20comparison.png)
 ## 文本结构化
 若要实现文本结构化，运行`main.py`即可，此函数提供两种模式：一是句子级别的结构化，对应text_predict函数，输入参数是一段文字，程序会自动进行结构化，输出结构化信息；
 二是文档级别的结构化，对应batch_process函数，输入参数有两个，一个是需要结构化的文本文件(txt)，一个是结构化后保存的文件(xlsx)。
 ## 知识网络
-我们统计了出现次数大于等于20的主实体词，然后从这些词语中筛选出有关鼻咽部的描述，最终以这些词语的三元组内容进行知识网络的可视化。
+我们统计了出现次数大于等于20的主实体词，然后从这些词语中筛选出有关鼻咽部的描述，最终以这些词语的三元组内容进行知识网络的可视化。  
+![知识网络](https://github.com/saynHuang/npc_structure/raw/main/data/knowledge%20network.png)
 
 
 
@@ -74,7 +76,7 @@ Additional parameters for different models：
 **BERT-CRF**：batch_size=8，epochs=10
 
 ## Comparison
-The performance of BERT-CRF model is better than the other four, so we choose BERT-CRF as our NER model.
+The performance of BERT-CRF model is better than the other four, so we choose BERT-CRF as our NER model.  
 ![model comparison](https://github.com/saynHuang/npc_structure/raw/main/data/model%20comparison.png)
 
 ## Text structure
@@ -84,5 +86,6 @@ The second is document-level structuring, call the batch_process function, there
 one is text direction(.txt) that needs to be structured, and the other is output file direction(.xlsx).
 ## Knowledge Network
 We counted the primary entities that appeared more than or equal to 20, and then filtered out the description of the nasopharynx from these words, 
-and finally visualized the nasopharyngeal carcinoma knowledge network.
+and finally visualized the nasopharyngeal carcinoma knowledge network.  
+![knowledge network](https://github.com/saynHuang/npc_structure/raw/main/data/knowledge%20network.png)
 
