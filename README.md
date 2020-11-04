@@ -6,7 +6,7 @@ python --> 3.6
 tensorflow --> 1.13.1  
 numpy --> 1.16.4  
 openpyxl --> 2.6.2  
-BERT预训练模型：chinese_L-12_H-768_A-12
+BERT预训练模型：[chinese_L-12_H-768_A-12](https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip)
 
 ## 数据预处理
 总共有769条数据，按照6：2：2划分为训练集、验证集和测试集。数据标注采用BISO标注法，实体标签为三元组 <(P,S),A,V>标签。我们已经将文本数据和对应的标签转化为id的形式，
@@ -47,7 +47,7 @@ python --> 3.6
 tensorflow --> 1.13.1  
 numpy --> 1.16.4  
 openpyxl --> 2.6.2  
-BERT pre-train model: chinese_L-12_H-768_A-12
+BERT pre-train model: [chinese_L-12_H-768_A-12](https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip)
 ## Data preprocessing
 There are a total of 769 pieces of data, divided into training set, validation set and test set according to 6:2:2. 
 Data labeling adopts the BISO labeling method, and the entity label is the triplet <(P,S),A,V>. 
@@ -56,7 +56,7 @@ Save as naso_id_train.pkl, naso_id_dev.pkl, naso_id_test.pkl.
 ## Training Model
 We compare five named entity recognition models (CNN-CRF、IDCNN-CRF、LSTM-CRF、BiLSTM-CRF、BERT-CRF). 
 Except for BERT-CRF, the other four trained models are stored in ner_train. If you want to train the BERT-CRF model, 
-click here to visit the official website to download the pre-train model and run `BERT_CRF.py`. 
+you should download the pre-train model and run `BERT_CRF.py`. 
 You can also set the hyperparameters of the BERT-CRF model in the `train_helper.py`.  
 The following are the hyperparameters we used in the experiment:  
 embedding_dim = 50  
