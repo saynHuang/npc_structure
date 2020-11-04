@@ -73,8 +73,9 @@ Additional parameters for different models：
 **BiLSTM-CRF**：Number of hidden layer units is 18  
 **BERT-CRF**：batch_size=8，epochs=10
 
-## Comparision
+## Comparison
 The performance of BERT-CRF model is better than the other four, so we choose BERT-CRF as our NER model.
+![model comparison](https://github.com/saynHuang/npc_structure/raw/main/data/model%20comparison.png)
 
 ## Text structure
 run `main.py` for text structure. This function provides two modes: one is sentence-level structuring, 
