@@ -1,0 +1,2 @@
+model_checkpoint_path: "idcnn_crf"
+all_model_checkpoint_paths: "idcnn_crf"

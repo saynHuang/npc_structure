@@ -1,0 +1,2 @@
+model_checkpoint_path: "lstm_crf"
+all_model_checkpoint_paths: "lstm_crf"

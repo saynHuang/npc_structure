@@ -1,0 +1,5 @@
+ total  : Accuracy : 0.9736    Recall : 0.9645    F1 : 0.9691
+entity P: Accuracy : 0.9708    Recall : 0.9755    F1 : 0.9731
+entity S: Accuracy : 0.9627    Recall : 0.9349    F1 : 0.9486
+entity A: Accuracy : 0.9737    Recall : 0.9640    F1 : 0.9688
+entity V: Accuracy : 0.9746    Recall : 0.9586    F1 : 0.9665
